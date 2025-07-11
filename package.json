@@ -1,6 +1,6 @@
 {
   "name": "express-devguard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plug-and-play middleware suite for small scale APIs: logging + validation + rate-limiting, all in one package.",
   "keywords": [
     "express",
