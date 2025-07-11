@@ -1,0 +1,15 @@
+# Node
+node_modules/
+dist/
+*.log
+.env
+
+# TypeScript
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
