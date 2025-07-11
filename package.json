@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/keyurpatil3000/express-devguard"
+    "url": "https://github.com/keyurpatil06/express-devguard"
   },
   "bugs": {
-    "url": "https://github.com/keyurpatil3000/express-devguard/issues"
+    "url": "https://github.com/keyurpatil06/express-devguard/issues"
   },
-  "homepage": "https://github.com/keyurpatil3000/express-devguard#readme",
+  "homepage": "https://github.com/keyurpatil06/express-devguard#readme",
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.10",
