@@ -17,9 +17,8 @@ export const apiLogger = (options: LoggerOptions = {}) => {
 
   return (req: Request, res: Response, next: NextFunction) => {
     const start = Date.now();
-    const originalSend = res.send;
 
-    res.send = function (body: any): Response {
+    res.on("finish", () => {
       const duration = Date.now() - start;
       const log = {
         method: req.method,
@@ -37,9 +36,7 @@ export const apiLogger = (options: LoggerOptions = {}) => {
         const fullPath = path.join(process.cwd(), logFilePath);
         fs.appendFileSync(fullPath, JSON.stringify(log) + "\n");
       }
-
-      return originalSend.call(this, body);
-    };
+    });
 
     next();
   };
